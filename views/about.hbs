@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Some Website</title>
+</head>
+
+<body>
+    {{> header}}
+    <p>Some text here</p>
+
+    {{!-- This is how we include HANDLEBARS PARTIALS(are pretty much like 'Components' in React) so by using this
+    '>' symbol followed by the NAME of the PARTIAL(so the 'footer' file) --}} 
+    {{> footer}}
+</body>
+
+</html>

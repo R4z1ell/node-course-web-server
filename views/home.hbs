@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Some Website</title>
+</head>
+
+<body>
+    {{> header}}
+    {{!-- This is how we use our 'screamIt' "Handlebars HELPER" function, we simply pass the 'welcomeMessage' as 
+    his argument so that we get an output where this message gets modified in all UPPERCASE --}}
+    <p>{{screamIt welcomeMessage}}</p>
+
+    {{> footer}}
+</body>
+
+</html>
