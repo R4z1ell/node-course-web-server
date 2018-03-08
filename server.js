@@ -2,6 +2,7 @@ const express = require("express");
 const hbs = require("hbs"); //'hbs' is an Express.js View engine for handlebars.js
 const fs = require("fs");
 
+const port = process.env.PORT || 3000;
 var app = express();
 
 hbs.registerPartials(__dirname + "/views/partials");
@@ -109,6 +110,6 @@ this 'Hello Express!' string BACK to the CLIENT that MADE the request. This 'lis
 second argument that is a FUNCTION that let us do something ONCE the server is UP because it can take a little
 bit of time to get started, in our case inside the function we just print a simple message that will show up in the
 terminal */
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
